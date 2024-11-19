@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background:rgb(44, 245, 252);
+    padding: 15px;
+    justify-content: space-around;
+    overflow: visible;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+nav ul h3{
+    margin-left: 1px;
+
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav .content{
+    display: flex;
+    margin-right: 20px;
+}
+nav .content input{
+    border-radius: 15px;
+    padding: 7.5px;
+    border-style: none;
+}
+nav .content button{
+    background: none;
+    border-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    size: 12px;
+}
+nav .content span{
+    size: 12px;
+    
+}
+/*Hero-section styling*/
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(images/tamara-bellis-QNCpA4csmcw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+
+
+}
+.hero-section .content{
+    position: left;
+    width: 85%;
+}
+.hero-section .content p,h2{
+    line-height: 1;
+    letter-spacing: 0.5;
+}
+
+.hero-section .content p{
+    font-size: 20px;
+    font-weight: 50;
+}
+.hero-section .content h2{
+    font-family: Italianno;
+    font-size: 65px;
+    font-weight: 450;
+    
+}
+.hero-section .content button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    background: rgb(44, 245, 252,0.5);
+    cursor: pointer;
+
+}
+.hero-section .content .arrow{
+    margin-left: 5px;
+}
+.hero-section .content button:hover{
+    background: rgb(44, 245, 252);
+}
+
+.product_detail img{
+    width: 40%;
+    height: 200px;
+
+}
+
+/*Products styling*/
+.products{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px;
+    width: 100%;
+    
+}
+.products img{
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.products button{
+    border-style: none;
+    background: rgb(44, 245, 252, 0.4);
+    border-radius:12px;
+    padding: 10px;
+}
+.products button:hover{
+    background: rgb(44, 245, 252);
+}
+.products button a{
+    text-decoration: none;
+    color: black;
+}
+.products h2,
+p{
+    line-height: 1.5;
+    letter-spacing: 0.5;
+}
+/*Product detail styling*/
+.product_detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  
+    
+}
+.product_detail img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product_detail p,
+h1{
+    line-height: 1.5;
+    letter-spacing: 0.5;
+  
+}
+
+.product_detail p{
+    width: 70%;
+  
+}
+.product_detail button{
+    border-style: none;
+    border-radius: 15px;
+    padding: 15px;
+    background:  rgb(44, 245, 252);
+    margin-top: 10px;
+    margin-right: 10px;
+    
+  
+}
+/*footer styling section*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    justify-content: space-between;
+    background: rgb(44, 245, 252, 0.5);
+    max-width: 100%;
+    padding: 20px;
+    overflow: show;
+    bottom: 0;
+}
+.footer .about_logo p,
+h3,
+h4{
+    line-height: 1.5;
+    letter-spacing: 0.5;
+    margin-left: 10px;
+
+
+}
+
+.footer .about_logo p{
+    max-width: 70%;
+
+
+}
+.footer .about_logo .quick_links h4{
+    text-align: center;
+}
+.footer .about_logo .quick_links{
+    align-items: center;
+}
+.footer .about_logo input{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 14px;
+
+
+}
+.footer .about_logo button{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 10px;
+    background: rgb(22, 19, 19);
+    color: white;
+    
+    
+
+}
+.footer .subscribe_socials ul{
+    display: flex;
+    gap: 2rem;
+
+}
+.footer .subscribe_socials ul li{
+    list-style: none;
+    
+
+}
+.footer .subscribe_socials h4{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.quick_links ul li{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.quick_links ul li a{
+    text-decoration: none;
+    line-height: 1.5;
+    cursor: pointer;
+    color: black;
+}
+
+.quick_links ul li a:hover{
+    color: blue;
+}

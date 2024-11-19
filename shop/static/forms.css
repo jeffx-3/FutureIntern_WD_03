@@ -1,0 +1,36 @@
+
+/*forms styling */
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+    background: whitesmoke;
+}
+.page .forms h2{
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+.page .forms input{
+    width: 100%;
+    border-radius: 7px;
+    border-style: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.page .forms button{
+    border-style: none;
+    border-radius: 7px;
+    padding: 15px;
+    margin-left: 40%;
+    background: black;
+    color: white;
+}
+.page .forms button:hover{
+    background: blue;
+    color: black;
+    transform: transition 0.3s ease;
+}

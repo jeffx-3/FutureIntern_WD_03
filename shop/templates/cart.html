@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+<h2>Your Cart</h2>
+<ul>
+    {% for item in cart.items.all %}
+    <li>
+        {{ item.product.name }} - {{ item.quantity }} x {{ item.product.price }}
+        = {{ item.get_total_price }}
+        <a href="{% url 'remove_from_cart' item.id %}">Remove</a>
+    </li>
+    {% endfor %}
+</ul>
+<p>Total: {{ cart.get_total_price }}</p>
+<a href="{% url 'checkout' %}">Proceed to Checkout</a>
